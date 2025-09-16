@@ -11,6 +11,7 @@ class Api::V1::AppointmentsController < ApplicationController
 
     if params[:upcoming] == 'true'
       appointments_query = appointments_query.where('scheduled_at > ?', Time.current)
+                                           .where(status: 'scheduled')
     end
 
     appointments_query = appointments_query.order(:scheduled_at)
