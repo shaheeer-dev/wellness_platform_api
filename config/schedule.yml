@@ -1,0 +1,9 @@
+sync_clients:
+  class: SyncClientsJob
+  cron: '*/15 * * * *'  # Every 15 minutes
+  description: "Sync clients from external API"
+
+sync_appointments:
+  class: SyncAppointmentsJob
+  cron: '*/10 * * * *'  # Every 10 minutes
+  description: "Sync appointments from external API"
