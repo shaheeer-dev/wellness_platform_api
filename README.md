@@ -24,7 +24,7 @@ A Rails 7.2 API-only application for managing wellness clinic clients and appoin
 - **Ruby**: 3.2+
 - **Rails**: 7.2.2
 - **Database**: PostgreSQL
-- **Background Jobs**: Solid Queue
+- **Background Jobs**: Sidekiq
 - **API Serialization**: JSONAPI::Serializer
 - **HTTP Client**: HTTParty
 - **Testing**: RSpec, FactoryBot, WebMock
@@ -65,7 +65,7 @@ A Rails 7.2 API-only application for managing wellness clinic clients and appoin
 
 5. **Start background jobs**
    ```bash
-   bundle exec solid_queue:start
+   bundle exec sidekiq
    ```
 
 ### Full-Stack Setup
