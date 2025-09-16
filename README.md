@@ -84,7 +84,7 @@ To run the complete wellness platform:
    npm start     # Runs on http://localhost:3001
    ```
 
-## 🔄 Background Jobs
+## Background Jobs
 
 The application includes automatic periodic synchronization with the external API:
 
@@ -93,7 +93,7 @@ The application includes automatic periodic synchronization with the external AP
 
 Background jobs run automatically and handle data synchronization transparently.
 
-## 🧪 Testing
+## Testing
 
 Run the test suite:
 
@@ -108,7 +108,7 @@ bundle exec rspec spec/models/client_spec.rb
 bundle exec rspec --format documentation
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### External API Configuration
 
@@ -125,7 +125,7 @@ EXTERNAL_API_BASE_URI = 'https://your-postman-mock-server.mock.pstmn.io'.freeze
 3. Update the `EXTERNAL_API_BASE_URI` constant in `config/initializers/constants.rb` with your mock server URL
 4. The API key is managed through Rails credentials (if needed)
 
-## 🏗️ Architecture & Design Patterns
+## Architecture & Design Patterns
 
 ### Service Objects
 - `ExternalApiService`: Handles all external API communication
